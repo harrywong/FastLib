@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>QuickFAST</ProjectName>
+    <ProjectGuid>{2FEB72FB-FECA-1BAD-2430-B53C00007443}</ProjectGuid>
+    <RootNamespace>QuickFAST</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QuickFAST</TargetName>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QuickFAST</TargetName>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Taobao\hywh0619\FastLib\quickfast_1_5_0/Output/Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\QuickFAST\AMD64\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QuickFAST</TargetName>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Taobao\hywh0619\FastLib\quickfast_1_5_0/Output/Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\QuickFAST\AMD64\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QuickFAST</TargetName>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\libs\boost_1_43_0;$(ProjectDir)..\..\..\libs\xerces-c-3.1.1-x86-windows-vc-10.0\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QUICKFAST_BUILD_DLL;USING_PCH;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common\QuickFASTPch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>1033</Culture>
+      <AdditionalIncludeDirectories>E:\Taobao\hywh0619\FastLib\boost_1_43_0\include\boost_1_43_0;E:\Taobao\hywh0619\FastLib\boost_1_43_0\.;E:\Taobao\hywh0619\FastLib\xerces-c-3.1.1-x86-windows-vc-10.0\include;E:\Taobao\hywh0619\FastLib\quickfast_1_5_0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>xerces-c_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)QuickFAST.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\libs\boost_1_43_0\lib;$(ProjectDir)..\..\..\libs\xerces-c-3.1.1-x86-windows-vc-10.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)QuickFAST.lib</ImportLibrary>
+    </Link>
+    <!-- "postclean" was made-up by MPC for use by vs_postclean.pl.
+     Check if msbuild has any support for a custom post-cleaning step
+ -->
+    <!-- No known equivalent for DeploymentTool in vc10:
+-->
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\Library\boost_1_59_0;D:\Library\xerces-c-3.1.3\xerces-c-3.1.3\src;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QUICKFAST_BUILD_DLL;USING_PCH;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common\QuickFASTPch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>1033</Culture>
+      <AdditionalIncludeDirectories>E:\Taobao\hywh0619\FastLib\boost_1_43_0\include\boost_1_43_0;E:\Taobao\hywh0619\FastLib\boost_1_43_0\.;E:\Taobao\hywh0619\FastLib\xerces-c-3.1.1-x86-windows-vc-10.0\include;E:\Taobao\hywh0619\FastLib\quickfast_1_5_0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>xerces-c_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)QuickFAST.dll</OutputFile>
+      <AdditionalLibraryDirectories>D:\Library\boost_1_59_0\lib;D:\Library\xerces-c-3.1.3\xerces-c-3.1.3\Build\Win32\VC12\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)QuickFAST.lib</ImportLibrary>
+    </Link>
+    <!-- "postclean" was made-up by MPC for use by vs_postclean.pl.
+     Check if msbuild has any support for a custom post-cleaning step
+ -->
+    <!-- No known equivalent for DeploymentTool in vc10:
+-->
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TargetEnvironment>x64</TargetEnvironment>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>E:\Taobao\hywh0619\FastLib\boost_1_43_0\include\boost_1_43_0;E:\Taobao\hywh0619\FastLib\boost_1_43_0\.;E:\Taobao\hywh0619\FastLib\xerces-c-3.1.1-x86-windows-vc-10.0\include;E:\Taobao\hywh0619\FastLib\quickfast_1_5_0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QUICKFAST_BUILD_DLL;USING_PCH;_DEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common\QuickFASTPch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;_WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>1033</Culture>
+      <AdditionalIncludeDirectories>E:\Taobao\hywh0619\FastLib\boost_1_43_0\include\boost_1_43_0;E:\Taobao\hywh0619\FastLib\boost_1_43_0\.;E:\Taobao\hywh0619\FastLib\xerces-c-3.1.1-x86-windows-vc-10.0\include;E:\Taobao\hywh0619\FastLib\quickfast_1_5_0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>xerces-c_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)QuickFASTd.dll</OutputFile>
+      <AdditionalLibraryDirectories>.;E:\Taobao\hywh0619\FastLib\boost_1_43_0\lib;E:\Taobao\hywh0619\FastLib\xerces-c-3.1.1-x86-windows-vc-10.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>E:\Taobao\hywh0619\FastLib\quickfast_1_5_0/Output/Debug\QuickFASTd.lib</ImportLibrary>
+      <!--
+  Though we can set TargetMachine explicitly, VC++
+  can figure it out by project type. We don't need
+  to set it by ourselves.
+-->
+      <!--      <TargetMachine>0</TargetMachine>-->
+      <AdditionalOptions>/machine:AMD64 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <!-- "postclean" was made-up by MPC for use by vs_postclean.pl.
+     Check if msbuild has any support for a custom post-cleaning step
+ -->
+    <!-- No known equivalent for DeploymentTool in vc10:
+-->
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TargetEnvironment>x64</TargetEnvironment>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>E:\Taobao\hywh0619\FastLib\boost_1_43_0\include\boost_1_43_0;E:\Taobao\hywh0619\FastLib\boost_1_43_0\.;E:\Taobao\hywh0619\FastLib\xerces-c-3.1.1-x86-windows-vc-10.0\include;E:\Taobao\hywh0619\FastLib\quickfast_1_5_0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QUICKFAST_BUILD_DLL;USING_PCH;NDEBUG;WIN32;_WINDOWS;_CRT_NONSTDC_NO_WARNINGS;_AMD64_;_WIN64;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common\QuickFASTPch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;_WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>1033</Culture>
+      <AdditionalIncludeDirectories>E:\Taobao\hywh0619\FastLib\boost_1_43_0\include\boost_1_43_0;E:\Taobao\hywh0619\FastLib\boost_1_43_0\.;E:\Taobao\hywh0619\FastLib\xerces-c-3.1.1-x86-windows-vc-10.0\include;E:\Taobao\hywh0619\FastLib\quickfast_1_5_0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>xerces-c_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)QuickFAST.dll</OutputFile>
+      <AdditionalLibraryDirectories>.;E:\Taobao\hywh0619\FastLib\boost_1_43_0\lib;E:\Taobao\hywh0619\FastLib\xerces-c-3.1.1-x86-windows-vc-10.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>E:\Taobao\hywh0619\FastLib\quickfast_1_5_0/Output/Release\QuickFAST.lib</ImportLibrary>
+      <!--
+  Though we can set TargetMachine explicitly, VC++
+  can figure it out by project type. We don't need
+  to set it by ourselves.
+-->
+      <!--      <TargetMachine>0</TargetMachine>-->
+      <AdditionalOptions>/machine:AMD64 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <!-- "postclean" was made-up by MPC for use by vs_postclean.pl.
+     Check if msbuild has any support for a custom post-cleaning step
+ -->
+    <!-- No known equivalent for DeploymentTool in vc10:
+-->
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\QuickFASTPch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Application\CommandArgParser.cpp">
+    </ClCompile>
+    <ClCompile Include="Application\DecoderConnection.cpp">
+    </ClCompile>
+    <ClCompile Include="Application\DNDecoderConnectionImpl.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\BasePacketAssembler.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\Context.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\DataSource.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\DataSourceBuffer.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\DataSourceBufferedStream.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\DataSourceStream.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\DataSourceString.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\Decoder.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\DictionaryIndexer.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\Encoder.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FastEncodedHeaderAnalyzer.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldInstruction.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldInstructionAscii.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldInstructionBlob.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldInstructionByteVector.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldInstructionDecimal.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldInstructionGroup.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldInstructionSequence.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldInstructionTemplateRef.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldInstructionUtf8.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldOp.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldOpConstant.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldOpCopy.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldOpDefault.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldOpDelta.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldOpIncrement.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FieldOpTail.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\FixedSizeHeaderAnalyzer.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\GenericMessageBuilder.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\MessagePerPacketAssembler.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\MulticastDecoder.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\PacketSequencingAssembler.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\PresenceMap.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\SchemaElement.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\SegmentBody.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\SingleMessageConsumer.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\StreamingAssembler.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\Template.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\TemplateRegistry.cpp">
+    </ClCompile>
+    <ClCompile Include="Codecs\XMLTemplateParser.cpp">
+    </ClCompile>
+    <ClCompile Include="Common\BitMap.cpp">
+    </ClCompile>
+    <ClCompile Include="Common\Decimal.cpp">
+    </ClCompile>
+    <ClCompile Include="Common\dllmain.cpp">
+    </ClCompile>
+    <ClCompile Include="Common\Profiler.cpp">
+    </ClCompile>
+    <ClCompile Include="Common\Types.cpp">
+    </ClCompile>
+    <ClCompile Include="Common\WorkingBuffer.cpp">
+    </ClCompile>
+    <ClCompile Include="Communication\AsioService.cpp">
+    </ClCompile>
+    <ClCompile Include="Communication\AsynchFileSender.cpp">
+    </ClCompile>
+    <ClCompile Include="Communication\AsynchSender.cpp">
+    </ClCompile>
+    <ClCompile Include="Communication\FileSender.cpp">
+    </ClCompile>
+    <ClCompile Include="Communication\MulticastReceiverHandle.cpp">
+    </ClCompile>
+    <ClCompile Include="Communication\PCapReader.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\Field.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldAscii.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldByteVector.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldDecimal.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldGroup.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldIdentity.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldInt16.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldInt32.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldInt64.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldInt8.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldSequence.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldSet.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldString.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldUInt16.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldUInt32.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldUInt64.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldUInt8.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\FieldUtf8.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\Message.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\MessageAccessor.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\MessageBuilder.cpp">
+    </ClCompile>
+    <ClCompile Include="Messages\MessageFormatter.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\CommandArgHandler.h" />
+    <ClInclude Include="Application\CommandArgParser.h" />
+    <ClInclude Include="Application\DecoderConfiguration.h" />
+    <ClInclude Include="Application\DecoderConfiguration_fwd.h" />
+    <ClInclude Include="Application\DecoderConnection.h" />
+    <ClInclude Include="Application\DecoderConnection_fwd.h" />
+    <ClInclude Include="Application\DNDecoderConnectionImpl.h" />
+    <ClInclude Include="Application\DNDecoderConnectionImpl_fwd.h" />
+    <ClInclude Include="Application\QuickFAST.h" />
+    <ClInclude Include="Codecs\BasePacketAssembler.h" />
+    <ClInclude Include="Codecs\BasePacketAssembler_fwd.h" />
+    <ClInclude Include="Codecs\Context.h" />
+    <ClInclude Include="Codecs\Context_fwd.h" />
+    <ClInclude Include="Codecs\DataDestination.h" />
+    <ClInclude Include="Codecs\DataDestination_fwd.h" />
+    <ClInclude Include="Codecs\DataDestinationString.h" />
+    <ClInclude Include="Codecs\DataSource.h" />
+    <ClInclude Include="Codecs\DataSource_fwd.h" />
+    <ClInclude Include="Codecs\DataSourceBuffer.h" />
+    <ClInclude Include="Codecs\DataSourceBufferedStream.h" />
+    <ClInclude Include="Codecs\DataSourceStream.h" />
+    <ClInclude Include="Codecs\DataSourceString.h" />
+    <ClInclude Include="Codecs\Decoder.h" />
+    <ClInclude Include="Codecs\Decoder_fwd.h" />
+    <ClInclude Include="Codecs\DictionaryIndexer.h" />
+    <ClInclude Include="Codecs\DictionaryIndexer_fwd.h" />
+    <ClInclude Include="Codecs\Encoder.h" />
+    <ClInclude Include="Codecs\Encoder_fwd.h" />
+    <ClInclude Include="Codecs\FastEncodedHeaderAnalyzer.h" />
+    <ClInclude Include="Codecs\FieldInstruction.h" />
+    <ClInclude Include="Codecs\FieldInstruction_fwd.h" />
+    <ClInclude Include="Codecs\FieldInstructionAscii.h" />
+    <ClInclude Include="Codecs\FieldInstructionBlob.h" />
+    <ClInclude Include="Codecs\FieldInstructionByteVector.h" />
+    <ClInclude Include="Codecs\FieldInstructionDecimal.h" />
+    <ClInclude Include="Codecs\FieldInstructionExponent.h" />
+    <ClInclude Include="Codecs\FieldInstructionGroup.h" />
+    <ClInclude Include="Codecs\FieldInstructionInt16.h" />
+    <ClInclude Include="Codecs\FieldInstructionInt32.h" />
+    <ClInclude Include="Codecs\FieldInstructionInt64.h" />
+    <ClInclude Include="Codecs\FieldInstructionInt8.h" />
+    <ClInclude Include="Codecs\FieldInstructionInteger.h" />
+    <ClInclude Include="Codecs\FieldInstructionMantissa.h" />
+    <ClInclude Include="Codecs\FieldInstructionSequence.h" />
+    <ClInclude Include="Codecs\FieldInstructionTemplateRef.h" />
+    <ClInclude Include="Codecs\FieldInstructionUInt16.h" />
+    <ClInclude Include="Codecs\FieldInstructionUInt32.h" />
+    <ClInclude Include="Codecs\FieldInstructionUInt64.h" />
+    <ClInclude Include="Codecs\FieldInstructionUInt8.h" />
+    <ClInclude Include="Codecs\FieldInstructionUtf8.h" />
+    <ClInclude Include="Codecs\FieldOp.h" />
+    <ClInclude Include="Codecs\FieldOp_fwd.h" />
+    <ClInclude Include="Codecs\FieldOpConstant.h" />
+    <ClInclude Include="Codecs\FieldOpCopy.h" />
+    <ClInclude Include="Codecs\FieldOpDefault.h" />
+    <ClInclude Include="Codecs\FieldOpDelta.h" />
+    <ClInclude Include="Codecs\FieldOpIncrement.h" />
+    <ClInclude Include="Codecs\FieldOpNop.h" />
+    <ClInclude Include="Codecs\FieldOpTail.h" />
+    <ClInclude Include="Codecs\FixedSizeHeaderAnalyzer.h" />
+    <ClInclude Include="Codecs\GenericMessageBuilder.h" />
+    <ClInclude Include="Codecs\HeaderAnalyzer.h" />
+    <ClInclude Include="Codecs\HeaderAnalyzer_fwd.h" />
+    <ClInclude Include="Codecs\MessageConsumer.h" />
+    <ClInclude Include="Codecs\MessageConsumer_fwd.h" />
+    <ClInclude Include="Codecs\MessagePerPacketAssembler.h" />
+    <ClInclude Include="Codecs\MessagePerPacketAssembler_fwd.h" />
+    <ClInclude Include="Codecs\MulticastDecoder.h" />
+    <ClInclude Include="Codecs\MulticastDecoder_fwd.h" />
+    <ClInclude Include="Codecs\NoHeaderAnalyzer.h" />
+    <ClInclude Include="Codecs\PacketSequencingAssembler.h" />
+    <ClInclude Include="Codecs\PacketSequencingAssembler_fwd.h" />
+    <ClInclude Include="Codecs\PresenceMap.h" />
+    <ClInclude Include="Codecs\PresenceMap_fwd.h" />
+    <ClInclude Include="Codecs\SchemaElement.h" />
+    <ClInclude Include="Codecs\SchemaElement_fwd.h" />
+    <ClInclude Include="Codecs\SegmentBody.h" />
+    <ClInclude Include="Codecs\SegmentBody_fwd.h" />
+    <ClInclude Include="Codecs\SingleMessageConsumer.h" />
+    <ClInclude Include="Codecs\StreamingAssembler.h" />
+    <ClInclude Include="Codecs\SynchronousDecoder.h" />
+    <ClInclude Include="Codecs\Template.h" />
+    <ClInclude Include="Codecs\Template_fwd.h" />
+    <ClInclude Include="Codecs\TemplateRegistry.h" />
+    <ClInclude Include="Codecs\TemplateRegistry_fwd.h" />
+    <ClInclude Include="Codecs\XMLTemplateParser.h" />
+    <ClInclude Include="Codecs\XMLTemplateParser_fwd.h" />
+    <ClInclude Include="Common\AtomicCounter.h" />
+    <ClInclude Include="Common\AtomicOps.h" />
+    <ClInclude Include="Common\AtomicPointer.h" />
+    <ClInclude Include="Common\BitMap.h" />
+    <ClInclude Include="Common\ByteSwapper.h" />
+    <ClInclude Include="Common\Constants.h" />
+    <ClInclude Include="Common\Decimal.h" />
+    <ClInclude Include="Common\Decimal_fwd.h" />
+    <ClInclude Include="Common\Exceptions.h" />
+    <ClInclude Include="Common\Logger.h" />
+    <ClInclude Include="Common\Logger_fwd.h" />
+    <ClInclude Include="Common\Profiler.h" />
+    <ClInclude Include="Common\QuickFAST_Export.h" />
+    <ClInclude Include="Common\StringBuffer.h" />
+    <ClInclude Include="Common\Types.h" />
+    <ClInclude Include="Common\Value.h" />
+    <ClInclude Include="Common\Value_fwd.h" />
+    <ClInclude Include="Common\Version.h" />
+    <ClInclude Include="Common\WorkingBuffer.h" />
+    <ClInclude Include="Communication\AsioService.h" />
+    <ClInclude Include="Communication\AsioService_fwd.h" />
+    <ClInclude Include="Communication\Assembler.h" />
+    <ClInclude Include="Communication\Assembler_fwd.h" />
+    <ClInclude Include="Communication\AsynchFileReceiver.h" />
+    <ClInclude Include="Communication\AsynchFileReceiver_fwd.h" />
+    <ClInclude Include="Communication\AsynchFileSender.h" />
+    <ClInclude Include="Communication\AsynchFileSender_fwd.h" />
+    <ClInclude Include="Communication\AsynchReceiver.h" />
+    <ClInclude Include="Communication\AsynchReceiver_fwd.h" />
+    <ClInclude Include="Communication\AsynchSender.h" />
+    <ClInclude Include="Communication\AsynchSender_fwd.h" />
+    <ClInclude Include="Communication\AtomicQueue.h" />
+    <ClInclude Include="Communication\AtomicQueue_fwd.h" />
+    <ClInclude Include="Communication\BufferedRawFileReceiver.h" />
+    <ClInclude Include="Communication\BufferedRawFileReceiver_fwd.h" />
+    <ClInclude Include="Communication\BufferQueue.h" />
+    <ClInclude Include="Communication\BufferQueue_fwd.h" />
+    <ClInclude Include="Communication\BufferReceiver.h" />
+    <ClInclude Include="Communication\BufferReceiver_fwd.h" />
+    <ClInclude Include="Communication\BufferRecycler.h" />
+    <ClInclude Include="Communication\FileSender.h" />
+    <ClInclude Include="Communication\FileSender_fwd.h" />
+    <ClInclude Include="Communication\LinkedBuffer.h" />
+    <ClInclude Include="Communication\LinkedBuffer_fwd.h" />
+    <ClInclude Include="Communication\MulticastReceiver.h" />
+    <ClInclude Include="Communication\MulticastReceiver_fwd.h" />
+    <ClInclude Include="Communication\MulticastReceiverHandle.h" />
+    <ClInclude Include="Communication\MulticastSender.h" />
+    <ClInclude Include="Communication\MulticastSender_fwd.h" />
+    <ClInclude Include="Communication\PCapFileReceiver.h" />
+    <ClInclude Include="Communication\PCapFileReceiver_fwd.h" />
+    <ClInclude Include="Communication\PCapReader.h" />
+    <ClInclude Include="Communication\RawFileReceiver.h" />
+    <ClInclude Include="Communication\RawFileReceiver_fwd.h" />
+    <ClInclude Include="Communication\Receiver.h" />
+    <ClInclude Include="Communication\Receiver_fwd.h" />
+    <ClInclude Include="Communication\RecoveryFeed.h" />
+    <ClInclude Include="Communication\RecoveryFeed_fwd.h" />
+    <ClInclude Include="Communication\Sender.h" />
+    <ClInclude Include="Communication\Sender_fwd.h" />
+    <ClInclude Include="Communication\SingleServerBufferQueue.h" />
+    <ClInclude Include="Communication\SingleServerBufferQueue_fwd.h" />
+    <ClInclude Include="Communication\SynchReceiver.h" />
+    <ClInclude Include="Communication\SynchReceiver_fwd.h" />
+    <ClInclude Include="Communication\TCPReceiver.h" />
+    <ClInclude Include="Communication\TCPReceiver_fwd.h" />
+    <ClInclude Include="Messages\Field.h" />
+    <ClInclude Include="Messages\Field_fwd.h" />
+    <ClInclude Include="Messages\FieldAscii.h" />
+    <ClInclude Include="Messages\FieldByteVector.h" />
+    <ClInclude Include="Messages\FieldDecimal.h" />
+    <ClInclude Include="Messages\FieldGroup.h" />
+    <ClInclude Include="Messages\FieldIdentity.h" />
+    <ClInclude Include="Messages\FieldIdentity_fwd.h" />
+    <ClInclude Include="Messages\FieldInt16.h" />
+    <ClInclude Include="Messages\FieldInt32.h" />
+    <ClInclude Include="Messages\FieldInt64.h" />
+    <ClInclude Include="Messages\FieldInt8.h" />
+    <ClInclude Include="Messages\FieldSequence.h" />
+    <ClInclude Include="Messages\FieldSet.h" />
+    <ClInclude Include="Messages\FieldSet_fwd.h" />
+    <ClInclude Include="Messages\FieldString.h" />
+    <ClInclude Include="Messages\FieldUInt16.h" />
+    <ClInclude Include="Messages\FieldUInt32.h" />
+    <ClInclude Include="Messages\FieldUInt64.h" />
+    <ClInclude Include="Messages\FieldUInt8.h" />
+    <ClInclude Include="Messages\FieldUtf8.h" />
+    <ClInclude Include="Messages\Group.h" />
+    <ClInclude Include="Messages\Group_fwd.h" />
+    <ClInclude Include="Messages\Message.h" />
+    <ClInclude Include="Messages\Message_fwd.h" />
+    <ClInclude Include="Messages\MessageAccessor.h" />
+    <ClInclude Include="Messages\MessageBuilder.h" />
+    <ClInclude Include="Messages\MessageBuilder_fwd.h" />
+    <ClInclude Include="Messages\MessageField.h" />
+    <ClInclude Include="Messages\MessageField_fwd.h" />
+    <ClInclude Include="Messages\MessageFormatter.h" />
+    <ClInclude Include="Messages\Sequence.h" />
+    <ClInclude Include="Messages\Sequence_fwd.h" />
+    <ClInclude Include="Messages\SequentialSingleValueBuilder.h" />
+    <ClInclude Include="Messages\SingleValueBuilder.h" />
+    <ClInclude Include="Messages\SpecialAccessors.h" />
+    <ClInclude Include="Messages\ValueMessageBuilder.h" />
+    <ClInclude Include="Messages\ValueMessageBuilder_fwd.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
