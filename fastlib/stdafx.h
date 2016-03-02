@@ -11,7 +11,7 @@
 #include <tchar.h>
 
 
-
 // TODO: reference additional headers your program requires here
+#include <pcre2/config.h>
+#include <pcre2/pcre2.h>
 #include <Application/QuickFAST.h>
-#include <re2/re2.h>

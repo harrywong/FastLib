@@ -5,12 +5,14 @@
 
 #include "step.h"
 
+void Callback(char* s, int size)
+{
+	std::cout << size << std::endl;
+}
 
 int main()
 {
-	step::DeserializeFile("tests\\20150101.out", [](std::string& s, int i) {
-		printf("%d: %d\n", s.size(), i);
-	});
+	step::DeserializeFile("tests\\20150101.out", Callback);
 
 	int a = 0;
 	std::cin >> a;
